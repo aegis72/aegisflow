@@ -1,5 +1,5 @@
 # aegisflow
-AegisFlow XL and AegisFlow 1.5 are ComfyUI workflows designed by a professional for professionals
+AegisFlow XL and AegisFlow 1.5 are ComfyUI workflows designed by a professional for professionals.
 
 Hi! This is my personal workflow that I created for ComfyUI to enable me to use generative AI tools on my own art and on my job as a working artist. 
 Hopefully, it can help you too.
