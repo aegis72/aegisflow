@@ -1,0 +1,11 @@
+These two files contain embedded workflows for Stable Diffusion XL or 1.5.
+
+If you drag these into the ComfyUI interface, it will load these workflows. If you got a pre-configured drive from Major Studio, then everything will already be there in the right directories and will just run. Press "queue" and the model will load, the sampler will run, etc.
+
+If not you likely will have MANY missing nodes, models, controlnets, embeddings, etc. Some of these might install with the ComfyUI manager, but some might not. Also, ComfyUI and extension updates might break things. I'll supply new workflows when this happens, but ths release works and so you can alsways restore your installation from the backup and it will solve issues caused by updates or installation of new nodes that might break the workflow.
+
+Finally: SD 1.5 models generally load quite quickly, but SD XL models sometimes take large amounts of time to load. As long as there isn't an error message in the console or WebUI, it will load eventually. On some system though, you might get stuck with a console that just shows:
+
+[] []
+
+For a really long time....like over 15 minutes. If that happens, your instance of ComfyUI may be hung; if so, try restarting ComfyUI.
