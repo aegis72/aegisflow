@@ -1,4 +1,7 @@
 # aegisflow
+![interface_with_images](https://github.com/aegis72/aegisflow/assets/118572301/401984c4-293d-46e0-be12-9b1894c27f1c)
+
+
 AegisFlow XL and AegisFlow 1.5 are ComfyUI workflows designed by a professional for professionals.
 
 Hi! This is my personal workflow that I created for ComfyUI to enable me to use generative AI tools on my own art and on my job as a working artist. 
