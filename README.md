@@ -13,7 +13,7 @@ This isn’t intended to be “the workflow to end all workflows.” It isn’t 
 + To test ideas quickly without having to fully render new images
 + To generate multiple related assets in a ”project” style workflow, and then automatically name and associate them with each other in a project folder.
 
-This workflow is Donationware. I think folks should be compensated for art, but I also agree that art should be for everyone. This workflow is completely dependent on the hard work of others making art generative AI work, whom I believe you should support as well in whatever method you are able. 
+This workflow is Donationware. I think folks should be compensated for art, but I also agree that art should be for everyone. This workflow is completely dependent on the hard work of others making art, and making generative AI work, whom I believe you should support as well in whatever method you are able. 
 
 Distribute this workflow as you wish, and if you find it useful, support the folks that make your life easier and more creative. That includes continuing to expand your own technique... AI should be a tool, not a replacement for your own point of view, artistic vision or message.
 
