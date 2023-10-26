@@ -17,7 +17,7 @@ This workflow is Donationware. I think folks should be compensated for art, but 
 
 Distribute this workflow as you wish, and if you find it useful, support the folks that make your life easier and more creative. That includes continuing to expand your own technique... AI should be a tool, not a replacement for your own point of view, artistic vision or message.
 
-If you don’t want to deal with the intricacies of setting everything up, downloading checkpoints, etc, I do sell a portable installation of this workflow  and all the software pre-installed on a 256gb flash drive for $60 shipped. It will run on any Windows machine capable of running Stable Diffusion. That price covers my time, shipping and the cost of the drive---the software remains governed by the licenses of each individual component of the workflow. im also working on a Linux compatible version.
+If you don’t want to deal with the intricacies of setting everything up, downloading checkpoints, etc, I do sell a portable installation of this workflow  and all the software pre-installed on a 256gb micro SD drive for $60 shipped. It will run on any Windows machine capable of running Stable Diffusion. That price covers my time, shipping and the cost of the drive---the software remains governed by the licenses of each individual component of the workflow. im also working on a Linux compatible version.
 
 Visit me on [Gumroad](https://majorstudio.gumroad.com/l/aegisflowUSB) to purchase one or support my efforts with a [Major Studio Membership](https://majorstudio.gumroad.com/l/members)
 
