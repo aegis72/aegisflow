@@ -1,5 +1,5 @@
 # aegisflow
-![interface_with_images](https://github.com/aegis72/aegisflow/assets/118572301/401984c4-293d-46e0-be12-9b1894c27f1c)
+![aegisflow-screenshot_XL_va4](https://github.com/aegis72/aegisflow/assets/118572301/2f07517d-b236-424c-96ee-ebc587812523)
 
 
 AegisFlow XL and AegisFlow 1.5 are ComfyUI workflows designed by a professional for professionals.
