@@ -1,11 +1,63 @@
-These two files contain embedded workflows for Stable Diffusion XL or 1.5.
+For DIY Customers
 
-If you drag these into the ComfyUI interface, it will load these workflows. If you got a pre-configured drive from Major Studio, then everything will already be there in the right directories and will just run. Press "queue" and the model will load, the sampler will run, etc.
+If you aren't using aegisFlow Digital Delivery and are instead doing a Diy, get comfyUI zipped from Comfyanonymous' github. You’ll aslo need the checkpoints and files that everyone needs to run Stable Diffusion. 
 
-If not you likely will have MANY missing nodes, models, controlnets, embeddings, etc. Some of these might install with the ComfyUI manager, but some might not. Also, ComfyUI and extension updates might break things. I'll supply new workflows when this happens, but ths release works and so you can alsways restore your installation from the backup and it will solve issues caused by updates or installation of new nodes that might break the workflow.
+Use 7-Zip to unpack the file. Before doing anything else, start comfyUI and ensure you can generate the default purple bottle. Then, close down the comfyUI browser and command window, and run "update_comyui.bat" from the update directory.Reopen ComfyUI, and ensure you can generate again.
 
-Finally: SD 1.5 models generally load quite quickly, but SD XL models sometimes take large amounts of time to load. As long as there isn't an error message in the console or WebUI, it will load eventually. On some system though, you might get stuck with a console that just shows:
+Step 1:Install ComfyUI and confirm base install works for you.
+Install ComfyUI Manager, install first with "install-manager-for-portable-version.bat"
+Copy the input images into the comfyui/inputs folder.
+Search for "FastFail" and install their nodes
+Close the manager and the window, then Restart
 
-[] []
+Step 2: Allow dependencies to auto-install.Once it starts the Ui, 
+Load the AegisFlow_1.5 workflow. It is located in "comfyui_windows_portable/extras/Aegisflow workflows" 
+Use the manager to install missing nodes.
+Close ComyUi and reopen it.
+not all missing nodes will be found. Open "install custom nodes" and search for "rgthree". Install these nodes if the manager missed them. 
+Search again for "Ellangok" and install the Comfyui-post-processing nodes
+Search for "ComfyUI-Styles" and install that node
+In the manager, click on "install models" and search for "softedge." Install both the 1.5 and XL controlnet models you see.
+Go to https://civitai.com/models/19625?modelVersionId=25114 and place all the nodes found there (they are separately downloaded) and put them in the root of your comfyUI/custom nodes directory (don’t try to place them in a subfolder or they will not load properly).
 
-For a really long time....like over 15 minutes. If that happens, your instance of ComfyUI may be hung; if so, try restarting ComfyUI.
+!!!Don't generate anything yet!!! Restart Comfy UI command window and browser. 
+
+Step 3: When the system is back up, see if any warnings occur with nodes. If not, then-
+Select the softedge controlnet for 1.5
+Make sure you have a model selected in the loader, and a VAE if needed
+Test a generation. The system will download several more models (preprocessors), generate the controlnet image, pass it to the loader and sampler, and start the process. You will generate a bunch of images, which you will find (by default) in outputs/aegsiflow/test15_[date]/
+
+If you get an image, 1.5 is configured.
+
+You'll also now have a directory in ComfyUI directory called "pyssss_workflows." Copy the Workflows from the extras/aegisflow workflows directory into this folder so you can load them from the manager drop-down menu. 
+
+Step 4: load the AegisFlow_XL workflow. If you still have any missing nodes, install them via the manager.
+Select the appropriate XL softedge controlnet
+Select the proper model and refiner if appropriate
+Generate with "queue prompt." The system will behave like its 1.5 counterpart
+
+If you receive an image, then XL is configured.
+
+For Members (and those that purchased AegisFlow or received a download link via the bounty contest): 
+
+Step 5: Open the workflow "AegisFlow_MaskFX.' 
+The node "CropImage_AS" may be missing. If so, install this missing node via the manager. Fully restart Comfyui.
+Step 6: Generate using "Queue Prompt."
+If you get an image, then MaskFX is configured.
+
+Step 7: Install AegisFlow Faces
+Search for and Install the "Inspire pack" and "Face Detailer" nodes and restart. On restart, several packages will be installed.
+Install the model "RealESRgan-x2.pth." This is at minimum, you may elect to install other upscalers at the same time.
+Open the workflow "Aegisflow_Faces." select your model under "load checkpoint" as well as a VAE (specify one, or choose "baked" if the VAE is in the model already).
+Generate, and you'll turn a determined scowl into a knowing smirk :).
+
+If you get an image, then Faces is configured.
+
+
+Step 8: Install Supplemental Templates
+MaskFX, Iterate and Faces have "template" versions designed to make it easy to chain them together in series. Because of the way ComfyUI stores these, they have to be imported and are stored inside your browser (unlike full workflows under comfyui/Pyssss-workflows). This means if you change browsers or machines (say if you use your install off a portable drive on more than one PC) you'll need to redo these steps to install templates.
+Right click in an empty space, go to "node Templates," and click "Manage."
+In the manager, click "import" and go to the extras/Template Workflows (Import using template manager) folder. In there, you can shift select and click "open." No confirmation will be given, but now if you right click and go to "node Templates" you will see them there.
+Load the Workflow "AegisFlow_multi-template-example to see how templates can be used in an chain to get interesting results.
+
+Step 9: Enjoy. Have Fun!
